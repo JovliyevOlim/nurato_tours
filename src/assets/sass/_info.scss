@@ -1,0 +1,63 @@
+.info {
+  .info-image {
+    background-image: url('../infoBg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    @media (max-width: 1024px) {
+      padding: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      padding: 1.2rem;
+    }
+
+    @media (max-width: 480px) {
+      padding: 1rem;
+    }
+  }
+
+
+  h2 {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+}
+
+.info-details {
+  ol {
+    display: inline;
+
+    li {
+      margin: 2rem 0 1rem 0;
+      line-height: 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      font-family: AkayaKanadaka;
+    }
+
+    ol {
+      display: inline;
+
+      li {
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: sans-serif;
+      }
+    }
+  }
+
+  h5 {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    font-weight: 300;
+    font-family: sans-serif;
+  }
+}

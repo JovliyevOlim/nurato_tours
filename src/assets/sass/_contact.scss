@@ -1,0 +1,124 @@
+.contact {
+  background-image: url('../contact.jpg');
+  background-size: cover;
+  background-position: 100% 75%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+  margin-top: 4rem;
+  @media (max-width: 1024px) {
+    height: 250px;
+  }
+
+  @media (max-width: 768px) {
+    height: 200px;
+  }
+
+  h2 {
+    font-family: AkayaKanadaka;
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+.info-bg {
+  background-image: url('../info-bg.jpg');
+  background-size: cover;
+  background-position: 100% 75%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+  margin-top: 4rem;
+  @media (max-width: 1024px) {
+    height: 250px;
+  }
+
+  @media (max-width: 768px) {
+    height: 200px;
+  }
+
+  h2 {
+    font-family: AkayaKanadaka;
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+.contact-us-bg {
+  background-image: url('../contact-us-bg.jpg');
+  background-size: cover;
+  background-position: bottom;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+  @media (max-width: 1024px) {
+    height: 300px;
+  }
+
+  @media (max-width: 768px) {
+    height: 200px;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: AkayaKanadaka;
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+.contact-us-footer-bg {
+  background-image: url('../contact-us-footer-bg.jpg');
+  background-size: cover;
+  background-position: bottom;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+  @media (max-width: 1024px) {
+    height: 250px;
+  }
+
+  @media (max-width: 768px) {
+    height: 200px;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: AkayaKanadaka;
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+.contact-us {
+  h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    @media (max-width: 1024px) {
+      font-size: 1.1rem;
+      line-height: 1.6rem;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 0.95rem;
+      line-height: 1.4rem;
+    }
+  }
+}

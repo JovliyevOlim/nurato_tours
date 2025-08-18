@@ -1,0 +1,106 @@
+.desert {
+  .desert-image {
+    background-image: url('../desertbgimage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+    @media (max-width: 1024px) {
+      padding: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      padding: 1.2rem;
+    }
+
+    @media (max-width: 480px) {
+      padding: 1rem;
+    }
+  }
+
+
+  h2 {
+    color: white;
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 1.2rem;
+  }
+}
+
+.card-desert-tour {
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 280px;
+    @media (max-width: 1024px) {
+      height: 200px;
+    }
+
+    @media (max-width: 768px) {
+      height: 180px;
+    }
+  }
+
+  h5 {
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    @media (max-width: 1024px) {
+      font-size: 1.1rem;
+      line-height: 1.6rem;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 0.95rem;
+      line-height: 1.4rem;
+    }
+  }
+
+  h3 {
+    font-size: 2rem;
+    @media (max-width: 1024px) {
+      font-size: 1.8rem;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1.6rem;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  ul {
+    li {
+      font-style: italic;
+      font-size: 1.2rem;
+      line-height: 2rem;
+
+      @media (max-width: 1024px) {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+        line-height: 1.6rem;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 0.95rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}

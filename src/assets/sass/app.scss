@@ -1,0 +1,28 @@
+@import "variables";
+@import "home";
+@import "tours";
+@import "contact";
+@import "footer";
+@import "desert";
+@import "mountain";
+@import "info";
+@import "guesthouse";
+@import "booking";
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%; /* navbar pastidan chiqadi */
+    left: 0;
+    width: 100%;
+    background: white; /* fon oq bo‘lsin */
+    z-index: 1050; /* ustiga chiqishi uchun */
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .row {
+    margin: 0 5px 0 5px;
+  }
+}
