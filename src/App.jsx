@@ -18,8 +18,11 @@ function App() {
             <ScrollToTop/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
-                <Route path="/desert-tour" element={<DesertTour/>}/>
-                <Route path="/mountain-treks" element={<MountainTreks/>}/>
+                <Route path="/desert" element={<DesertTour/>}/>
+                <Route path="/mountains" element={<MountainTreks/>}/>
+                <Route path="/gorge" element={<MountainTreks/>}/>
+                <Route path="/riding" element={<MountainTreks/>}/>
+                <Route path="/scenic" element={<MountainTreks/>}/>
                 <Route path="/info" element={<Info/>}/>
                 <Route path="/guesthouse" element={<GuestHouse/>}/>
                 <Route path="/contact" element={<ContactUs/>}/>

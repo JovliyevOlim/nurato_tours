@@ -34,17 +34,17 @@ function Navbar(props) {
                         )
                         }
                     </ul>
-                    <div
-                        className={'d-flex gap-3 align-items-top justify-content-center justify-content-xl-end'}>
-                        <Icons/>
-                    </div>
-                    <div className="mt-3 mt-md-0 ms-md-3 d-flex justify-content-center">
-                        <Link to='/booking'>
-                            <button className="btn btn-danger">
-                                Book Now
-                            </button>
-                        </Link>
-                    </div>
+                    {/*<div*/}
+                    {/*    className={'d-flex gap-3 align-items-top justify-content-center justify-content-xl-end'}>*/}
+                    {/*    <Icons/>*/}
+                    {/*</div>*/}
+                    {/*<div className="mt-3 mt-md-0 ms-md-3 d-flex justify-content-center">*/}
+                    {/*    <Link to='/booking'>*/}
+                    {/*        <button className="btn btn-danger">*/}
+                    {/*            Book Now*/}
+                    {/*        </button>*/}
+                    {/*    </Link>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </nav>);

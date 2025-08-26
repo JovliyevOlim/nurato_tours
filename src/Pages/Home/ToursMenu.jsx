@@ -29,12 +29,12 @@ function ToursMenu(props) {
                     <div className={'card-tour'}>
                         <img src={tour2} alt="img"/>
                         <div className={'d-flex align-items-center gap-2 justify-content-center py-3'}>
-                            <Link to={'/desert-tour'}>
+                            <Link to={'/desert'}>
                                 <p className={'p-0 m-0'}>
                                     Desert</p>
                             </Link>
                             and
-                            <Link to={'/mountain-treks'}>
+                            <Link to={'/mountain'}>
                                 <p className={'p-0 m-0'}>
                                     Mountain Tours
                                 </p>

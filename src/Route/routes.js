@@ -5,11 +5,23 @@ export const routes = [
     },
     {
         name: 'Desert Tours',
-        path: '/desert-tour'
+        path: '/desert'
     },
     {
         name: 'Mountain Treks',
-        path: '/mountain-treks'
+        path: '/mountains'
+    },
+    {
+        name: 'Sarmishsoy gorge',
+        path: '/gorge'
+    },
+    {
+        name: 'Horsbek riding',
+        path: '/riding'
+    },
+    {
+        name: 'Scenic tours with private driver',
+        path: '/scenic'
     },
     {
         name: 'Info',
