@@ -1,4 +1,4 @@
-import mountain2 from "../../assets/mountainTours/mountain1_1.jpg"
+import mountain2 from "../../assets/mountainTours/mountain1_1.JPG"
 import mountain21 from "../../assets/mountainTours/mountain1_2.jpg"
 import mountain22 from "../../assets/mountainTours/mountain1_3.jpg"
 import hidden1 from "../../assets/mountainTours/hidden1.jpg"
