@@ -9,6 +9,8 @@ import GuestHouse from "./Pages/GuestHouse/GuestHouse.jsx";
 import ContactUs from "./Pages/Contact/Contact.jsx";
 import Booking from "./Pages/Booking/Booking.jsx";
 import ScrollToTop from "./Component/ScrollToTop.jsx";
+import RidingTour from "./Pages/Riding/RidingTour.jsx";
+import GorgeTour from "./Pages/Gorge/GorgeTour.jsx";
 
 function App() {
 
@@ -20,9 +22,9 @@ function App() {
                 <Route path="/" element={<Home/>}/>
                 <Route path="/desert" element={<DesertTour/>}/>
                 <Route path="/mountains" element={<MountainTreks/>}/>
-                <Route path="/gorge" element={<MountainTreks/>}/>
-                <Route path="/riding" element={<MountainTreks/>}/>
-                <Route path="/scenic" element={<MountainTreks/>}/>
+                <Route path="/gorge" element={<GorgeTour/>}/>
+                <Route path="/riding" element={<RidingTour/>}/>
+                {/*<Route path="/scenic" element={<MountainTreks/>}/>*/}
                 <Route path="/info" element={<Info/>}/>
                 <Route path="/guesthouse" element={<GuestHouse/>}/>
                 <Route path="/contact" element={<ContactUs/>}/>

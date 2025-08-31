@@ -11,22 +11,64 @@ function CardDesertTour({tour}) {
                 </div>
                 <div className="col-12 col-md-4 col-lg-4">
                     <h5>{tour?.text}</h5>
+                    {
+                        tour?.listTexts &&
+                        tour?.listTexts.length > 0 &&
+                        <div>
+                            <h5>{tour?.listText}</h5>
+                            <ul>
+                                {
+                                    tour?.listTexts.map((item, index) =>
+                                        <li key={index}>{item}</li>)
+                                }
+                            </ul>
+                        </div>
+                    }
+                    <h5>{tour?.text1}</h5>
+                    <h5>{tour?.text2}</h5>
                     <h5>{tour?.hour}</h5>
                 </div>
                 <div className="col-12 col-md-4 col-lg-4">
-                    <h5>Costs for the tour:</h5>
-                    <ul>
-                        {
-                            tour?.price.map((item, index) =>
-                                <li key={index}>{item}</li>)
-                        }
-                    </ul>
-                    <h5>{tour.additional}</h5>
+                    {
+
+                        tour?.price.map((item, index) =>
+                            <>
+                                <h5>{item?.name}</h5>
+                                <ul>
+                                    {
+                                        item?.list.map((item2, index) =>
+                                            <li key={index}>{item2}</li>
+                                        )
+                                    }
+                                </ul>
+                            </>
+                        )
+
+                    }
+                    {
+                        tour?.priceIncludes &&
+                        tour?.priceIncludes.length > 0 &&
+                        <div>
+                            <h5>{tour?.priceIncludesText}</h5>
+                            <ul>
+                                {
+                                    tour?.priceIncludes.map((item, index) =>
+                                        <li key={index}>{item}</li>)
+                                }
+                            </ul>
+                        </div>
+                    }
+                    {
+                        tour?.additional?.map((item, index) =>
+                            <h5>{item}</h5>
+                        )
+                    }
                 </div>
+
             </div>
             <div className="row g-5 mt-4">
                 {
-                    tour.images.map((item, index) =>
+                    tour?.images.map((item, index) =>
                         <div className="col-12 col-md-4">
                             <img loading="lazy" src={item} alt={index}/>
                         </div>

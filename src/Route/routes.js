@@ -16,13 +16,13 @@ export const routes = [
         path: '/gorge'
     },
     {
-        name: 'Horsbek riding',
+        name: 'Horseback riding',
         path: '/riding'
     },
-    {
-        name: 'Scenic tours with private driver',
-        path: '/scenic'
-    },
+    // {
+    //     name: 'Scenic tours with private driver',
+    //     path: '/scenic'
+    // },
     {
         name: 'Info',
         path: '/info'
