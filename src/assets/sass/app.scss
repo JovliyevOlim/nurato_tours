@@ -9,6 +9,12 @@
 @import "guesthouse";
 @import "booking";
 
+@import url('https://fonts.googleapis.com/css2?family=Monomakh&display=swap');
+
+html, body {
+  font-family: "Monomakh", system-ui;
+}
+
 @media (max-width: 991px) {
   .navbar-collapse {
     position: absolute;

@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 function Contact({className}) {
     return (
         <div className={className}>
-            <Link to={'/contact'}>
+            <Link to={'/contact'} className={'text-decoration-none'}>
                 <h2 className={'text-center'}>Contact Us</h2>
             </Link>
         </div>

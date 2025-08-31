@@ -20,7 +20,7 @@ function InfoDetails(props) {
                                                 {
                                                     item?.list.map((item2, i2) =>
                                                         <>
-                                                            <li key={i2}>{item2.name}:</li>
+                                                            <li  key={i2}>{item2.name}:</li>
                                                             {
                                                                 item2.text.map((item3, i3) =>
                                                                     <h5>{item3}</h5>
