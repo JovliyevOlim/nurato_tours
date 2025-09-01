@@ -1,7 +1,7 @@
 import React from 'react';
 import {routes} from "../Route/routes.js";
 import {Link, useLocation} from "react-router-dom";
-import Icons from "./Icons.jsx";
+import logo from "../assets/logo.svg"
 
 function Navbar(props) {
 
@@ -13,9 +13,9 @@ function Navbar(props) {
             <div className="container">
                 <a className="navbar-brand" href="#">
                     <img
-                        width={130}
-                        height={80}
-                        src="https://images.squarespace-cdn.com/content/v1/5da57c9a7401fe62055030b3/1571293324101-FZWIS1DDS2CSNTLTZQ2Z/Nurata_logo_horiz.png?format=1500w"
+                        width={150}
+                        height={100}
+                        src={logo}
                         className="img-fluid" alt="..."/>
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
