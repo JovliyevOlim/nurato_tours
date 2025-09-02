@@ -55,7 +55,7 @@ function GuestHouseText(props) {
         <div className={'row g-4 mb-5 justify-content-center guestHouse-text'}>
             {
                 list.map((item, index) =>
-                    <div className="col-11 col-md-8">
+                    <div key={index} className="col-11 col-md-8">
                         <h5>{item.title}</h5>
                         <p>{item.text}</p>
                         <div className={'guestHouse-text-item'}>
@@ -71,15 +71,15 @@ function GuestHouseText(props) {
             }
             <div className="col-11 col-md-8">
                 <h5>How to Book & Contact Us</h5>
-                <p>You can easily find and book our guest house through <Link
-                    to='https://www.booking.com/hotel/uz/sentyab-obi-chashma-guest-house.ru.html'>Booking.com</Link> using
+                <p>You can easily find and book our guest house through <a target="_blank" rel="noopener noreferrer"
+                                                                           href='https://www.booking.com/hotel/uz/sentyab-obi-chashma-guest-house.ru.html'>Booking.com</a> using
                     the link below:</p>
-                <p><Link
-                    to={'https://www.booking.com/hotel/uz/sentyab-obi-chashma-guest-house.ru.html'}>https://www.booking.com/hotel/uz/sentyab-obi-chashma-guest-house.ru.html</Link>
+                <p><a target="_blank" rel="noopener noreferrer" className="text-break"
+                      href='https://www.booking.com/hotel/uz/sentyab-obi-chashma-guest-house.ru.html'>https://www.booking.com/hotel/uz/sentyab-obi-chashma-guest-house.ru.html</a>
                 </p>
                 <p>For more information, inquiries, or assistance with your reservation, please visit our website or
-                    contact us directly via the same <Link
-                        to='https://www.booking.com/hotel/uz/sentyab-obi-chashma-guest-house.ru.html'>Booking.com</Link> page.
+                    contact us directly via the same <a target="_blank" rel="noopener noreferrer"
+                                                        href='https://www.booking.com/hotel/uz/sentyab-obi-chashma-guest-house.ru.html'>Booking.com</a> page.
                 </p>
                 <p>We look forward to welcoming you and making your stay unforgettable!</p>
             </div>

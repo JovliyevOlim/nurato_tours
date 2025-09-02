@@ -53,7 +53,7 @@ function ToursMenu(props) {
                 </div>
                 {
                     tours.map((tour, index) =>
-                        <div className={'col-12  col-md-4'}>
+                        <div key={index} className={'col-12  col-md-4'}>
                             <CardTours img={tour.img} path={tour.path} title={tour.title} text={tour.text}/>
                         </div>
                     )

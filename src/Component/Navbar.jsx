@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {routes} from "../Route/routes.js";
 import {Link, useLocation} from "react-router-dom";
 import logo from "../assets/logo.svg"
@@ -7,29 +7,47 @@ function Navbar(props) {
 
     const location = useLocation();
 
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth > 991) {
+                const menu = document.getElementById("navbarSupportedContent");
+                menu.classList.remove("show");
+                document.body.classList.remove("nav-open");
+            }
+        };
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    const [isOpen, setIsOpen] = React.useState(false);
+
+    function toggleNavbar() {
+        setIsOpen(!isOpen);
+        document.body.classList.toggle("nav-open");
+    }
 
     return (
-        <nav className="navbar navbar-expand-lg sticky-top bg-white">
+        <nav className="navbar navbar-expand-lg sticky-md-top bg-white">
             <div className="container">
-                <a className="navbar-brand" href="#">
+                <Link className="navbar-brand" to="/">
                     <img
                         width={150}
                         height={100}
                         src={logo}
                         className="img-fluid" alt="..."/>
-                </a>
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                </Link>
+                <button className="navbar-toggler" onClick={() => toggleNavbar()}>
                     <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse"
+                <div className={`collapse navbar-collapse ${isOpen ? 'open' : ''}`}
                      id="navbarSupportedContent">
-                    <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul className="navbar-nav ms-auto mb-lg-0">
                         {routes.map((route, index) =>
                             <li className="nav-item text-center" key={index}>
-                                <a className={`nav-link ${location.pathname === route.path && 'text-decoration-underline'}`}
-                                   href={route.path}>{route.name}</a>
+                                <Link to={route.path} onClick={() => toggleNavbar()}
+                                      className={`nav-link ${location.pathname === route.path && 'text-decoration-underline'}`}>
+                                    {route.name}
+                                </Link>
                             </li>
                         )
                         }

@@ -3,9 +3,6 @@ import visa from '../assets/visa.png';
 import payme from '../assets/payme.png';
 import mastercard from '../assets/mastercard.png';
 import {Link} from "react-router-dom";
-import {CgMail} from "react-icons/cg";
-import {FaFacebookF, FaInstagram, FaTripadvisor} from "react-icons/fa";
-import {LuFacebook} from "react-icons/lu";
 import {routes} from "../Route/routes.js";
 import Icons from "../Component/Icons.jsx";
 
@@ -16,9 +13,9 @@ function Footer(props) {
                 <div className={'col-12 col-md-4 col-xl-3'}>
                     <h5>Nurota trips</h5>
                     <div className={'d-flex mt-4 gap-1 img-fluid align-items-center'}>
-                        <img src={visa} alt="visa"/>
-                        <img src={mastercard} alt="mastercard"/>
-                        <img src={payme} alt="payme"/>
+                        <img loading="lazy" src={visa} alt="visa"/>
+                        <img loading="lazy" src={mastercard} alt="mastercard"/>
+                        <img loading="lazy" src={payme} alt="payme"/>
                     </div>
                 </div>
                 <div className={'col-12 col-md-4 col-xl-3 d-flex flex-column gap-3'}>
@@ -33,7 +30,7 @@ function Footer(props) {
                 <div className={'col-12 col-md-4 col-xl-3 d-flex flex-column gap-3'}>
                     {
                         routes.map((route, index) =>
-                            <h2><Link to={route.path}>{route.name}</Link>
+                            <h2 key={index}><Link to={route.path}>{route.name}</Link>
                             </h2>
                         )
                     }

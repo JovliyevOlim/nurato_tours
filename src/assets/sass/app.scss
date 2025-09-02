@@ -87,20 +87,50 @@ html, body {
   }
 }
 
-@media (max-width: 991px) {
-  .navbar-collapse {
-    position: absolute;
-    top: 100%; /* navbar pastidan chiqadi */
-    left: 0;
-    width: 100%;
-    background: white; /* fon oq bo‘lsin */
-    z-index: 1050; /* ustiga chiqishi uchun */
-    padding: 1rem;
-  }
-}
 
 @media (max-width: 991px) {
   .row {
     margin: 0 5px 0 5px;
+  }
+}
+
+/*** Spinner ***/
+#spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease-out, visibility 0s linear .5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity .5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+  /* overlay style */
+  .navbar-collapse {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: white;
+    z-index: 1050;
+    padding: 2rem;
+  }
+
+
+  /* silliq ochilish */
+  .navbar-collapse.open {
+    display: block;
+    height: 100vh;
+    transition: all 0.4s ease-in-out;
+  }
+
+  /* Body scroll yopish */
+  body.nav-open {
+    overflow: hidden;
   }
 }

@@ -32,7 +32,7 @@ function CardDesertTour({tour}) {
                     {
 
                         tour?.price.map((item, index) =>
-                            <>
+                            <div key={index}>
                                 <h5>{item?.name}</h5>
                                 <ul>
                                     {
@@ -41,7 +41,7 @@ function CardDesertTour({tour}) {
                                         )
                                     }
                                 </ul>
-                            </>
+                            </div>
                         )
 
                     }
@@ -60,7 +60,7 @@ function CardDesertTour({tour}) {
                     }
                     {
                         tour?.additional?.map((item, index) =>
-                            <h5>{item}</h5>
+                            <h5 key={index}>{item}</h5>
                         )
                     }
                 </div>
@@ -69,7 +69,7 @@ function CardDesertTour({tour}) {
             <div className="row g-5 mt-4">
                 {
                     tour?.images.map((item, index) =>
-                        <div className="col-12 col-md-4">
+                        <div key={index} className="col-12 col-md-4">
                             <img loading="lazy" src={item} alt={index}/>
                         </div>
                     )
