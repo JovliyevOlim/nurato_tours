@@ -15,27 +15,38 @@ function ContactUs(props) {
                         <div className="position-relative h-100">
                             <iframe
                                 className="position-relative w-100 h-100"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95821.74849352763!2d69.1815609!3d41.3110815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b9fa4e4aaab%3A0x66c7f2b6a7b13412!2sTashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1720161889553!5m2!1sen!2s"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1192.1356568642766!2d66.6705512!3d40.605202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDM2JzE4LjciTiA2NsKwNDAJMjAuMSJF!5e0!3m2!1sen!2s!4v1693663680000!5m2!1sen!2s"
                                 frameBorder="0"
                                 style={{minHeight: '450px', border: 0}}
                                 allowFullScreen=""
                                 aria-hidden="false"
                                 tabIndex="0"
-                                title="Google Map - Tashkent"
+                                title="Google Map - Nurota Trip"
                             />
                         </div>
                     </div>
 
                     {/* Contact Form */}
                     <div className="col-12 col-lg-6">
-                        <h4>Address: Sentob village house #102</h4>
-                        <h4>Nurata, Uzbekistan</h4>
-                        <h4>You can also find us using the offline map app MAPS.ME by searching "Guesthouse Ruslan
-                            Nurata & Tours," as linked here.</h4>
-                        <h4>Telephone: +998956072027</h4>
-                        <h4>Email: ruslan.nuratau@mail.ru</h4>
-                        <h4>You can make a booking on this website or you can also find us on Booking.com at this link.
-                            Note that on Booking.com and on some maps Nurata is spelled "Nurota."</h4>
+                        <h4>Address: Sentob village, house 102</h4>
+                        <h4>Sentob/Nurota, Uzbekistan</h4>
+                        <h4>You can also find us using the <a target="_blank" rel="noopener noreferrer"
+                                                              href="https://www.google.com/maps/place/40%C2%B036'18.7%22N+66%C2%B040'20.1%22E/@40.605202,66.6696661,658m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d40.605202!4d66.672241?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D">MAPS.ME</a> offline
+                            map application by
+                            searching for “Obi chashma guesthouse & Nurota trip” linked here.</h4>
+                        <h4>Whatsapp: +99895 922 75 55 (Whatsapp message link)</h4>
+                        <h4>Telegram: +99895 922 75 55</h4>
+                        <h4>Phone: <Link target="_blank" rel="noopener noreferrer" to={'tel:+998959227555'}>+99895 922
+                            75 55</Link></h4>
+                        <h4>Email: <Link target="_blank" rel="noopener noreferrer"
+                                         to='mailto:davronn340@gmail.com'>davronn340@gmail.com</Link></h4>
+                        <h4>You can make a booking on this website or you can also find us on <a target="_blank"
+                                                                                                 rel="noopener noreferrer"
+                                                                                                 href="https://www.booking.com/hotel/uz/sentyab-obi-chashma-guest-house.ru.html">Booking.com</a> at
+                            this link.
+                            Note that on <a target="_blank" rel="noopener noreferrer"
+                                            href="https://www.booking.com/hotel/uz/sentyab-obi-chashma-guest-house.ru.html">Booking.com</a> and
+                            on some maps Nurata is spelled "Nurota."</h4>
                         <h4>If you need any further information or assistance, please do not hesitate to contact us</h4>
                     </div>
 

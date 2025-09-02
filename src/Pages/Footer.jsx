@@ -19,13 +19,20 @@ function Footer(props) {
                     </div>
                 </div>
                 <div className={'col-12 col-md-4 col-xl-3 d-flex flex-column gap-3'}>
-                    <h2>Sentob village house #102</h2>
-                    <h2>Nurota, Uzbekistan</h2>
-                    <h2><Link to={'Maps.Me Link'}>Google Maps Link</Link> - <Link to={'Maps.Me Link'}>Maps.Me
-                        Link</Link>
+                    <h2>Sentob village house 102</h2>
+                    <h2>Sentob/Nurota, Uzbekistan</h2>
+                    <h2><Link target="_blank" rel="noopener noreferrer"
+                              to="https://www.google.com/maps/place/40%C2%B036'18.7%22N+66%C2%B040'20.1%22E/@40.605202,66.6696661,658m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d40.605202!4d66.672241?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D">Google
+                        Maps Link</Link> -
+                        <Link target="_blank" rel="noopener noreferrer"
+                              to="https://maps.apple.com/place?address=Navoiy,%20Uzbekistan&auid=17462142806541862057&coordinate=40.605231,66.672125&lsp=6489&name=Navoiy&map=explore">Maps.me</Link>
                     </h2>
-                    <h2>Ph: <Link to={'tel:+998959227555'}> +998959227555</Link></h2>
-                    <h2>Email: <Link to='mailto:davronn340@gmail.com'>davronn340@gmail.com</Link></h2>
+                    <h2>Whatsapp: +99895 922 75 55 (Whatsapp message link)</h2>
+                    <h2>Telegram: +99895 922 75 55</h2>
+                    <h2>Phone: <Link target="_blank" rel="noopener noreferrer"
+                                     to={'tel:+998959227555'}> +99895 922 75 55</Link></h2>
+                    <h2>Email: <Link target="_blank" rel="noopener noreferrer"
+                                     to='mailto:davronn340@gmail.com'>davronn340@gmail.com</Link></h2>
                 </div>
                 <div className={'col-12 col-md-4 col-xl-3 d-flex flex-column gap-3'}>
                     {
