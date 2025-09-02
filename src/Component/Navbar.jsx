@@ -27,7 +27,7 @@ function Navbar(props) {
     }
 
     return (
-        <nav className="navbar navbar-expand-lg sticky-md-top bg-white">
+        <nav className="navbar navbar-expand-lg sticky-top bg-white">
             <div className="container">
                 <Link className="navbar-brand" to="/">
                     <img
