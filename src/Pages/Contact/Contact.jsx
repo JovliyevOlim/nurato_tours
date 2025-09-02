@@ -34,9 +34,10 @@ function ContactUs(props) {
                                                               href="https://www.google.com/maps/place/40%C2%B036'18.7%22N+66%C2%B040'20.1%22E/@40.605202,66.6696661,658m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d40.605202!4d66.672241?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D">MAPS.ME</a> offline
                             map application by
                             searching for “Obi chashma guesthouse & Nurota trip” linked here.</h4>
-                        <h4>Whatsapp: +99895 922 75 55 (Whatsapp message link)</h4>
-                        <h4>Telegram: +99895 922 75 55</h4>
-                        <h4>Phone: <Link target="_blank" rel="noopener noreferrer" to={'tel:+998959227555'}>+99895 922
+                        <h4>Whatsapp: <Link target="_blank" rel="noopener noreferrer" to='https://wa.me/998959227555'>+99895 922 75 55 </Link>(Whatsapp message link)</h4>
+                        <h4>Telegram: <Link target="_blank" rel="noopener noreferrer" to='https://t.me/+998959227555'>+99895 922
+                            75 55</Link></h4>
+                        <h4>Phone: <Link target="_blank" rel="noopener noreferrer" to='tel:+998959227555'>+99895 922
                             75 55</Link></h4>
                         <h4>Email: <Link target="_blank" rel="noopener noreferrer"
                                          to='mailto:davronn340@gmail.com'>davronn340@gmail.com</Link></h4>

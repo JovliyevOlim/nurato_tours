@@ -27,8 +27,11 @@ function Footer(props) {
                         <Link target="_blank" rel="noopener noreferrer"
                               to="https://maps.apple.com/place?address=Navoiy,%20Uzbekistan&auid=17462142806541862057&coordinate=40.605231,66.672125&lsp=6489&name=Navoiy&map=explore">Maps.me</Link>
                     </h2>
-                    <h2>Whatsapp: +99895 922 75 55 (Whatsapp message link)</h2>
-                    <h2>Telegram: +99895 922 75 55</h2>
+                    <h2>Whatsapp: <Link target="_blank" rel="noopener noreferrer" to='https://wa.me/998959227555'>+99895
+                        922 75 55 </Link> (Whatsapp message link)</h2>
+                    <h2>Telegram: <Link target="_blank" rel="noopener noreferrer" to='https://t.me/+998959227555'>+99895
+                        922
+                        75 55</Link></h2>
                     <h2>Phone: <Link target="_blank" rel="noopener noreferrer"
                                      to={'tel:+998959227555'}> +99895 922 75 55</Link></h2>
                     <h2>Email: <Link target="_blank" rel="noopener noreferrer"
