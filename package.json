@@ -8,12 +8,16 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "postbuild": "react-snap --puppeteer-args='--no-sandbox --disable-setuid-sandbox'"
+    "postbuild": "react-snap --puppeteer-args=\"--no-sandbox --disable-setuid-sandbox\""
   },
   "reactSnap": {
     "source": "dist",
     "crawl": true,
-    "inlineCss": true
+    "inlineCss": true,
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ]
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
