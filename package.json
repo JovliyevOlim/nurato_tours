@@ -11,6 +11,7 @@
     "postbuild": "react-snap"
   },
   "reactSnap": {
+    "source": "dist",
     "crawl": true,
     "inlineCss": true
   },
