@@ -1,20 +1,10 @@
 import {defineConfig} from 'vite'
 import react from '@vitejs/plugin-react'
-import babel from 'vite-plugin-babel'
 
 // https://vite.dev/config/
 export default defineConfig({
     base: '/',
-    plugins: [
-        react(),
-        babel({
-            babelConfig: {
-                plugins: [
-                    '@babel/plugin-proposal-optional-chaining'
-                ]
-            }
-        })
-    ],
+    plugins: [react()],
     build: {
         target: 'es2015', // Puppeteer friendly
     },
