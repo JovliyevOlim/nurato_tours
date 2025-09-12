@@ -6,6 +6,6 @@ export default defineConfig({
     base: '/',
     plugins: [react()],
     build: {
-        target: 'es2015',  // <- Puppeteer/Node 18 tushunadigan JS
+        target: 'es2015', // Puppeteer friendly
     },
 })
