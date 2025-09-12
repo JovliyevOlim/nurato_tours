@@ -19,10 +19,6 @@ export const routes = [
         name: 'Horseback riding',
         path: '/riding'
     },
-    // {
-    //     name: 'Scenic tours with private driver',
-    //     path: '/scenic'
-    // },
     {
         name: 'Info',
         path: '/info'

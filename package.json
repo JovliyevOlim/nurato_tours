@@ -19,17 +19,8 @@
       "--disable-setuid-sandbox"
     ],
     "include": [
-      "/",
-      "/trip",
-      "/mountain",
-      "/booking",
-      "/contact",
-      "/guesthouse",
-      "/info",
-      "/riding",
-      "/gorge",
-      "/desert",
-      "/mountains"
+      "/", "/mountains", "/booking", "/contact",
+      "/guesthouse", "/info", "/riding", "/gorge", "/desert", "/mountains"
     ]
   },
   "dependencies": {

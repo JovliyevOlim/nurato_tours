@@ -28,7 +28,6 @@ function App() {
                     <Route path="/mountains" element={<MountainTreks/>}/>
                     <Route path="/gorge" element={<GorgeTour/>}/>
                     <Route path="/riding" element={<RidingTour/>}/>
-                    {/*<Route path="/scenic" element={<MountainTreks/>}/>*/}
                     <Route path="/info" element={<Info/>}/>
                     <Route path="/guesthouse" element={<GuestHouse/>}/>
                     <Route path="/contact" element={<ContactUs/>}/>
