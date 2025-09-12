@@ -6,6 +6,6 @@ export default defineConfig({
     base: '/',
     plugins: [react()],
     build: {
-        target: 'es2015', // Puppeteer friendly
+        target: 'es2017', // Puppeteer friendly
     },
 })
