@@ -114,7 +114,7 @@ function Booking(props) {
     return (
         <div className='booking container'>
 
-            <div className="row g-5">
+            <div className="row g-0 g-md-5">
                 {/* Google Maps */}
                 <div className="col-12 col-lg-6">
                     <div className="position-relative h-100">
@@ -125,12 +125,13 @@ function Booking(props) {
                 <div className="col-12 col-lg-6">
                     {
                         success ? <div className={'h-100  d-flex justify-content-center align-items-center'}>
-                                <h3 className={'w-75'}>Thank you! Your application has been successfully submitted. Our team will reach out to
+                                <h3 className={'w-75'}>Thank you! Your application has been successfully submitted. Our team
+                                    will reach out to
                                     you soon.</h3>
                             </div> :
                             <form onSubmit={handleSubmit}>
                                 <div className="row g-4 form-group">
-                                    <div className="col-6">
+                                    <div className="col-12 col-md-6">
                                         <label htmlFor="firstName">First Name</label>
                                         <input
                                             type="text"
@@ -144,7 +145,7 @@ function Booking(props) {
                                         {errors.firstName && <small className="text-danger">{errors.firstName}</small>}
                                     </div>
 
-                                    <div className="col-6">
+                                    <div className="col-12 col-md-6">
                                         <label htmlFor="lastName">Last Name</label>
                                         <input
                                             type="text"
@@ -159,7 +160,7 @@ function Booking(props) {
                                         {errors.lastName && <small className="text-danger">{errors.lastName}</small>}
                                     </div>
 
-                                    <div className="col-6">
+                                    <div className="col-12 col-md-6">
                                         <label htmlFor="email">Email address</label>
                                         <input
                                             type="email"
@@ -174,7 +175,7 @@ function Booking(props) {
                                         {errors.email && <small className="text-danger">{errors.email}</small>}
                                     </div>
 
-                                    <div className="col-6">
+                                    <div className="col-12 col-md-6">
                                         <label htmlFor="phoneNumber">Phone Number</label>
                                         <input
                                             type="text"
