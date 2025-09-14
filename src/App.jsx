@@ -3,6 +3,7 @@ import Header from "./Pages/Header.jsx";
 import Footer from "./Pages/Footer.jsx";
 import {lazy} from "react";
 import AppLayout from "./Component/AppLayout.jsx";
+import NotFound from "./Component/NotFound.jsx";
 
 
 // Lazy imports
@@ -32,6 +33,7 @@ function App() {
                     <Route path="/guesthouse" element={<GuestHouse/>}/>
                     <Route path="/contact" element={<ContactUs/>}/>
                     <Route path="/booking" element={<Booking/>}/>
+                    <Route path="*" element={<NotFound/>}/>
                 </Route>
             </Routes>
             <Footer/>
