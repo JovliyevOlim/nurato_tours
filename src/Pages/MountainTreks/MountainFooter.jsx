@@ -22,7 +22,7 @@ const footer = [
 
 ]
 
-function MountainFooter(props) {
+function MountainFooter() {
     return (
         <div className={'mountain-footer container my-5'}>
             <h2>Combine Tours with Your Destination</h2>
@@ -30,7 +30,7 @@ function MountainFooter(props) {
             <div className="row">
                 {
                     footer.map((item, index) =>
-                        <div className="col-12 col-md-4">
+                        <div key={index} className="col-12 col-md-4">
                             <h5>{item}</h5>
                         </div>
                     )

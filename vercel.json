@@ -1,8 +1,40 @@
 {
   "rewrites": [
     {
+      "source": "/desert",
+      "destination": "/desert.html"
+    },
+    {
+      "source": "/mountains",
+      "destination": "/mountains.html"
+    },
+    {
+      "source": "/gorge",
+      "destination": "/gorge.html"
+    },
+    {
+      "source": "/riding",
+      "destination": "/riding.html"
+    },
+    {
+      "source": "/info",
+      "destination": "/info.html"
+    },
+    {
+      "source": "/guesthouse",
+      "destination": "/guesthouse.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/booking",
+      "destination": "/booking.html"
+    },
+    {
       "source": "/(.*)",
-      "destination": "/"
+      "destination": "/index.html"
     }
   ]
 }

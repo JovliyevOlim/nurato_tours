@@ -10,14 +10,18 @@
   gap: 3rem;
   padding: 2rem;
 
-  h2 {
+  h1,
+  h2,
+  p {
     color: white;
     font-size: 2rem;
   }
   @media (max-width: 1024px) {
     height: 500px;
 
-    h2 {
+    h1,
+    h2,
+    p {
       font-size: 1.4rem;
     }
   }
@@ -25,7 +29,9 @@
   @media (max-width: 768px) {
     height: 500px;
 
-    h2 {
+    h1,
+    h2,
+    p {
       font-size: 1.2rem;
     }
   }
@@ -35,7 +41,9 @@
     height: 550px;
     gap: 1.2rem;
     padding: 1.2rem;
-    h2 {
+    h1,
+    h2,
+    p {
       font-size: 1.2rem;
     }
   }

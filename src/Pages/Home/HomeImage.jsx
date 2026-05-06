@@ -1,25 +1,27 @@
 import React from 'react';
 import person from "../../assets/personImage.jpg";
 
-function HomeImage(props) {
+function HomeImage() {
     return (
         <div className="container">
             <div className={'bg-image'}>
-                <h2 className={'text-center'}>From big and noisy cities to quiet and peaceful villages
-                    From Samarkand, Bukhara and Tashkent
-                    Life and experience of the historical and monumental villages of Nurota.</h2>
-                <h2 className={'text-center'}>2025/2026</h2>
-                <h2 className={'text-start'}>Experiences:</h2>
-                <h2 className={'text-start'}>“Village life”, “Bread baking in a tandoor”, “National cuisine master
-                    class”,
-                    “National musical
-                    instrument master”, “Yurt camping”, “Uzbek desert”, “Camel riding”, “Horse riding”, “Cultural
-                    trekking
-                    and tourism in Nurota”.</h2>
+                <h1 className={'text-center'}>Nurota tours, Sentob guesthouse and authentic village experiences in
+                    Uzbekistan</h1>
+                <p className={'text-center'}>
+                    Travel from Samarkand, Bukhara or Tashkent to the peaceful villages, mountains, springs and
+                    desert landscapes of the Nurota region.
+                </p>
+                <h2 className={'text-center'}>2026 travel season</h2>
+                <p className={'text-start'}>
+                    Experiences include village life, bread baking in a tandoor, Uzbek cuisine master classes,
+                    traditional music, yurt camping, camel riding, horseback riding, mountain trekking and cultural
+                    tours around Sentob, Aydarkul and Nurota.
+                </p>
             </div>
             <div className={'d-flex mt-5  justify-content-start align-items-center'}>
                 <div className={'col-11 home-person'}>
-                    <img className={'home-person-image'} src={person} alt="person"/>
+                    <img className={'home-person-image'} src={person}
+                         alt="Host from Nurota Trips welcoming guests in Sentob village"/>
                     <h2>
                         "Nurota is a unique corner in the heart of Uzbekistan. A land where mountains and deserts,
                         springs and ancient monuments come together in harmony. People of different ethnic backgrounds

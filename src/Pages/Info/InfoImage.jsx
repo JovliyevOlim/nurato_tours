@@ -1,6 +1,6 @@
 import React from 'react';
 
-function InfoImage(props) {
+function InfoImage() {
     return (
         <div className="info">
             <div className="info-image">

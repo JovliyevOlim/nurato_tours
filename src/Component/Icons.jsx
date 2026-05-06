@@ -4,7 +4,7 @@ import {FaInstagram, FaTripadvisor} from "react-icons/fa";
 import {LuFacebook} from "react-icons/lu";
 import {Link} from "react-router-dom";
 
-function Icons(props) {
+function Icons() {
     return (
         <>
             <Link target={"_blank"} to="mailto:davronn340@gmail.com">

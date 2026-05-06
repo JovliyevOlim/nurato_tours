@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 function CardTours({img, title, text, path}) {
     return (
         <div className={'card-tour'}>
-            <img loading="lazy" src={img} alt="img"/>
+            <img loading="lazy" src={img} alt={`${title} experience in the Nurota and Sentob area`}/>
             <div className={'d-flex align-items-center justify-content-center py-3'}>
 
                 <Link to={path}>

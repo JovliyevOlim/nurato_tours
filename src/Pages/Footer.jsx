@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 import {routes} from "../Route/routes.js";
 import Icons from "../Component/Icons.jsx";
 
-function Footer(props) {
+function Footer() {
     return (
         <div className={'footer container my-5'}>
             <div className={'row m-0 g-5'}>

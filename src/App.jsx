@@ -4,6 +4,7 @@ import Footer from "./Pages/Footer.jsx";
 import {lazy} from "react";
 import AppLayout from "./Component/AppLayout.jsx";
 import NotFound from "./Component/NotFound.jsx";
+import Seo from "./Component/Seo.jsx";
 
 
 // Lazy imports
@@ -21,6 +22,7 @@ function App() {
 
     return (
         <div>
+            <Seo/>
             <Header/>
             <Routes>
                 <Route element={<AppLayout/>}>

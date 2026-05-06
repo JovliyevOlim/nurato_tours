@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-function DesertImage(props) {
+function DesertImage() {
     return (
         <div className="horse">
             <div className="horse-image">

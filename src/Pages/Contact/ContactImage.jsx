@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ContactImage(props) {
+function ContactImage() {
     return (
         <div className="contact-us-bg">
             <h2>Nurata awaits!</h2>

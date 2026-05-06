@@ -21,20 +21,20 @@ const tours = [
     },
 ]
 
-function ToursMenu(props) {
+function ToursMenu() {
     return (
         <div className={'container'}>
             <div className={'row gx-0 g-5 mt-5'}>
                 <div className={'col-12  col-md-4'}>
                     <div className={'card-tour'}>
-                        <img src={tour2} alt="img"/>
+                        <img src={tour2} alt="Desert and mountain landscapes near Nurota and Sentob"/>
                         <div className={'d-flex align-items-center gap-2 justify-content-center py-3'}>
                             <Link to={'/desert'}>
                                 <p className={'p-0 m-0'}>
                                     Desert</p>
                             </Link>
                             and
-                            <Link to={'/mountain'}>
+                            <Link to={'/mountains'}>
                                 <p className={'p-0 m-0'}>
                                     Mountain Tours
                                 </p>

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-function GorgeImage(props) {
+function GorgeImage() {
     return (
         <div className="gorge">
             <div className="gorge-image">

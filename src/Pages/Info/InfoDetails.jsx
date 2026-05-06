@@ -1,7 +1,7 @@
 import React from 'react';
 import {info} from "./inf.js";
 
-function InfoDetails(props) {
+function InfoDetails() {
     return (
         <div className={'container info-details'}>
             <h3 className={'my-5'}>Below is a list of frequently asked questions about visiting Sentob Village. If you
@@ -12,28 +12,28 @@ function InfoDetails(props) {
                     <ol>
                         {
                             info.map((item, i) =>
-                                <>
-                                    <li key={i}>
+                                <React.Fragment key={i}>
+                                    <li>
                                         {item.title}
                                         <div>
                                             <ol type="A">
                                                 {
                                                     item?.list.map((item2, i2) =>
-                                                        <>
-                                                            <li key={i2}>{item2.name}:</li>
+                                                        <React.Fragment key={i2}>
+                                                            <li>{item2.name}:</li>
                                                             {
                                                                 item2.text.map((item3, i3) =>
-                                                                    <h5>{item3}</h5>
+                                                                    <h5 key={i3}>{item3}</h5>
                                                                 )
                                                             }
-                                                        </>
+                                                        </React.Fragment>
                                                     )
                                                 }
                                             </ol>
                                         </div>
                                     </li>
                                     <h5>{item.text}</h5>
-                                </>)
+                                </React.Fragment>)
 
                         }
                     </ol>

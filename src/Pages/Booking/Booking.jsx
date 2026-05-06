@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react';
 import img from '../../assets/booking.JPG'
+import SeoIntro from "../../Component/SeoIntro.jsx";
 
 const baseUrl = "https://nurotatrips.com/api"
 
-function Booking(props) {
+function Booking() {
 
     const [tours, setTours] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -51,7 +52,7 @@ function Booking(props) {
         validate()
     };
 
-    const handleBlur = (e) => {
+    const handleBlur = () => {
         validate()
     };
 
@@ -113,12 +114,22 @@ function Booking(props) {
 
     return (
         <div className='booking container'>
+            <SeoIntro
+                title="Book Nurota tours and Sentob guesthouse stays"
+                description="Send a direct booking request for Nurota Trips if you want to reserve a Sentob guesthouse stay, Aydarkul or Kyzylkum tour, Sarmishsoy excursion, mountain trek or horseback riding experience."
+                places={["Sentob", "Nurota", "Aydarkul", "Kyzylkum", "Sarmishsoy", "Fozilmon"]}
+                links={[
+                    {to: "/guesthouse", label: "Review the guesthouse"},
+                    {to: "/desert", label: "Choose a desert tour"},
+                    {to: "/contact", label: "Contact us first"}
+                ]}
+            />
 
             <div className="row g-0 g-md-5">
                 {/* Google Maps */}
                 <div className="col-12 col-lg-6">
                     <div className="position-relative h-100">
-                        <img src={img} className={'booking-image'} alt="booking"/>
+                        <img src={img} className={'booking-image'} alt="Travel experience in the Nurota region for tour booking"/>
                     </div>
                 </div>
 

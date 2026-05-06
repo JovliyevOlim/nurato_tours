@@ -3,7 +3,7 @@ import {routes} from "../Route/routes.js";
 import {Link, useLocation} from "react-router-dom";
 import logo from "../assets/logo.svg"
 
-function Navbar(props) {
+function Navbar() {
 
     const location = useLocation();
 
@@ -34,7 +34,7 @@ function Navbar(props) {
                         width={150}
                         height={100}
                         src={logo}
-                        className="img-fluid" alt="..."/>
+                        className="img-fluid" alt="Nurota Trips logo"/>
                 </Link>
                 <button className="navbar-toggler" onClick={() => toggleNavbar()}>
                     <span className="navbar-toggler-icon"></span>

@@ -1,5 +1,4 @@
 import React from 'react';
-import img from '../assets/desertTours/desertTour1_1.JPG';
 
 function CardDesertTour({tour}) {
     return (
@@ -70,7 +69,7 @@ function CardDesertTour({tour}) {
                 {
                     tour?.images.map((item, index) =>
                         <div key={index} className="col-12 col-md-4">
-                            <img loading="lazy" src={item} alt={index}/>
+                            <img loading="lazy" src={item} alt={`${tour?.name} in the Nurota region - photo ${index + 1}`}/>
                         </div>
                     )
                 }

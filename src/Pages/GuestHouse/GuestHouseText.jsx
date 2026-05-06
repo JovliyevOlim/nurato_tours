@@ -50,7 +50,7 @@ const list = [
 ]
 
 
-function GuestHouseText(props) {
+function GuestHouseText() {
     return (
         <div className={'row g-4 mb-5 justify-content-center guestHouse-text'}>
             {

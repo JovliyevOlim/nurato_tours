@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from "../Component/Navbar.jsx";
 
-function Header(props) {
+function Header() {
     return (
         <Navbar/>
     );

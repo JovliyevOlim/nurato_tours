@@ -2,12 +2,23 @@ import React from 'react';
 import ContactImage from "./ContactImage.jsx";
 import Contact from "../Home/Contact.jsx";
 import {Link} from "react-router-dom";
+import SeoIntro from "../../Component/SeoIntro.jsx";
 
-function ContactUs(props) {
+function ContactUs() {
     return (
         <div className={'contact-us'}>
             <div className='container'>
                 <ContactImage/>
+                <SeoIntro
+                    title="Contact Nurota Trips in Sentob, Uzbekistan"
+                    description="Use this page to contact our family-run tour service in Sentob village for Nurota tours, guesthouse reservations, transport help and direct location guidance through WhatsApp, Telegram, phone or email."
+                    places={["Sentob village", "Nurota", "Navoi Region", "Uzbekistan"]}
+                    links={[
+                        {to: "/booking", label: "Send a booking request"},
+                        {to: "/guesthouse", label: "See the guesthouse"},
+                        {to: "/info", label: "Travel information"}
+                    ]}
+                />
                 <div className="row g-5 mt-5">
                     {/* Google Maps */}
                     <div className="col-12 col-lg-6"

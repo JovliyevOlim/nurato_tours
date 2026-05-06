@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
-function MountainImage(props) {
+function MountainImage() {
     return (
         <div className="mountain">
             <div className="mountain-image">
